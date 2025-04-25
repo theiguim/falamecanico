@@ -650,7 +650,7 @@ footer {
         align-content: center;
         height: 100vh;
         background: linear-gradient(to top, rgb(255, 255, 255), rgba(11, 3, 58, 0.733)),
-            url('img/auto-mechanic-repairing-car-engine-repair-service-garage_1048944-2523167.avif');
+            url('img/bgd.png');
 
         background-position: top;
     }
