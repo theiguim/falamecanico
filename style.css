@@ -383,7 +383,7 @@ button:hover {
 
 
     background: linear-gradient(to right, #010114de, #010114),
-        url('images/background.jpg');
+        url('img/background.jpg');
     display: flex;
     flex-direction: column;
 
