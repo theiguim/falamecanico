@@ -13,13 +13,13 @@ html {
 
 /* 020224 */
 body {
-    background-color: #010114;
+    background-color: black;
     color: white;
     font-family: "barlow", sans-serif;
 }
 
 .gradient-text {
-    background: linear-gradient(to bottom, #080872, #020224);
+    background: linear-gradient(to bottom, rgb(12, 12, 12), black);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -63,13 +63,17 @@ h2 {
 }
 
 button {
-    background: linear-gradient(to bottom, #2e2edd 9%, #220d80 100%);
+    background: linear-gradient(to bottom, #dada3b 9%, #f5f54d 100%);
+    /* background: #f5f54d; */
     padding: 20px;
     font-size: 20px;
     border-radius: 50px;
     border: none;
-    color: white;
+    color: black;
+    font-weight: bolder;
     cursor: pointer;
+
+    box-shadow: 1px 1px 20px 5px #f5f54d31;
 }
 
 section {
@@ -77,8 +81,8 @@ section {
 }
 
 .main {
-    background: linear-gradient(to right, rgb(255, 255, 255), #010114d7),
-        url('img/bgd.png');
+    background: linear-gradient(to right, rgb(122, 122, 122) 1%, rgba(0, 0, 0, 0.836)),
+        url('img/car-img.jpg');
     background-size: contain;
     background-position: center;
 
@@ -98,7 +102,7 @@ section {
     box-sizing: border-box;
     max-width: 700px;
     width: 50vw;
-    color: #020224;
+    color: black;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -218,7 +222,7 @@ button:hover {
     justify-content: center;
     gap: 50px;
     padding: 100px;
-    background-color: #010114;
+    background-color: black;
 }
 
 .graph {
@@ -250,9 +254,9 @@ button:hover {
     width: 0%;
     /* Começa vazia */
     height: 100%;
-    background: linear-gradient(to right, #2e2edd, #220d80);
+    background: linear-gradient(to right, #dada3b, #f5f54d);
     text-align: center;
-    color: white;
+    color: black;
     font-weight: bold;
     line-height: 20px;
     transition: width 1.5s ease-in-out;
@@ -287,7 +291,7 @@ button:hover {
     /* background: linear-gradient(to bottom, white 70%, #020224); */
     border-radius: 10px;
     background-color: white;
-    color: #020224;
+    color: black;
 
     /* text-align: right; */
 
@@ -321,7 +325,7 @@ button:hover {
     align-items: center;
     align-content: center;
     justify-content: center;
-    background: linear-gradient(to right #010114de, #010114);
+    background: linear-gradient(to right rgba(0, 0, 0, 0.829), black);
     /* background: linear-gradient(to right, rgba(0, 51, 102, 0.8), #020224); */
 }
 
@@ -382,8 +386,10 @@ button:hover {
     height: auto;
 
 
-    background: linear-gradient(to right, #010114de, #010114),
-        url('img/background.jpg');
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.781), black),
+        url('img/car-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
 
@@ -476,7 +482,7 @@ button:hover {
 
 .sec6 {
     height: auto;
-    background: linear-gradient(to right #010114de, #010114);
+    background: linear-gradient(to right rgba(0, 0, 0, 0.801), black);
     display: flex;
     align-items: center;
     align-content: center;
@@ -649,7 +655,7 @@ footer {
         align-items: center;
         align-content: center;
         height: 100vh;
-        background: linear-gradient(to top, rgb(255, 255, 255), rgba(11, 3, 58, 0.733)),
+        background: linear-gradient(to top, rgb(255, 255, 255), rgba(0, 0, 0, 0.795)),
             url('img/bgd.png');
 
         background-position: top;
