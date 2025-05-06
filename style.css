@@ -43,7 +43,7 @@ h1 {
 }
 
 h3 {
-    font-weight: bold;
+    font-weight: lighter;
     font-size: 20px;
 }
 
@@ -81,8 +81,8 @@ section {
 }
 
 .main {
-    background: linear-gradient(to right, rgb(122, 122, 122) 1%, rgba(0, 0, 0, 0.836)),
-        url('img/car-img.jpg');
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.849) 20%, rgba(0, 0, 0, 0.603) 50%),
+            url('img/bgd.png');
     background-size: contain;
     background-position: center;
 
@@ -102,7 +102,7 @@ section {
     box-sizing: border-box;
     max-width: 700px;
     width: 50vw;
-    color: black;
+    color: white;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -561,16 +561,15 @@ footer {
 
     .mainImg {
         width: 50%;
+        margin-top: auto;
         height: 100%;
         position: relative;
-        /* background-color: orange; */
 
     }
 
     .mainImg img {
-        width: 550px;
+        width: 500px;
         position: absolute;
-
         bottom: 0;
         right: 0;
     }
@@ -579,7 +578,6 @@ footer {
 @media(max-width: 1076px) and (min-width: 850px) {
     .mainTxt {
         width: 450px;
-        color: #020224;
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -591,7 +589,6 @@ footer {
     .mainTxt>h1 {
         font-size: 35px;
         text-transform: uppercase;
-        font-weight: bolder;
     }
 
     .mainTxt>p {
@@ -656,13 +653,14 @@ footer {
         flex-direction: column-reverse;
         align-items: center;
         align-content: center;
-        background: linear-gradient(to top, rgb(151, 151, 151) 1%, rgba(0, 0, 0, 0.877)),
-            url('img/car-img.jpg');
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.849) 20%, rgba(0, 0, 0, 0.603) 50%),
+            url('img/bgd.png');
         background-repeat: no-repeat;
 
         background-size: cover;
         background-position: top;
     }
+
 
     .logo {
         align-items: center;
@@ -675,17 +673,17 @@ footer {
 
     .mainTxt {
         width: 500px;
-        gap: 15px;
+        gap: 50px;
         text-align: center;
+        color: white;
     }
 
     .mainTxt>h1 {
         font-size: 38px;
         text-transform: uppercase;
-        font-weight: bolder;
     }
 
-    .mainTxt>p {
+    .mainTxt>h3 {
         font-size: 20px;
     }
 
@@ -696,6 +694,7 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
+        display: none;
     }
 
     .mainImg img {
@@ -939,16 +938,18 @@ footer {
 
 
     .main {
-        height: 70vh;
-        padding: 0;
+        height: 90vh;
+        align-items: center;
+        justify-content: center;
     }
 
     .mainTxt {
-        gap: 10px !important;
+       
     }
 
     .mainImg {
         padding: 0;
+     
     }
 
     .mainImg img {
